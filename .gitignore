@@ -1,0 +1,28 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 生成产物（体积大，可由 schema + data 重新生成）
+*.pdf
+*.png
+*.jpg
+output/
+dist/
+build/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# 本地覆盖配置
+.env
+local.json
+*.local
