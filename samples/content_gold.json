@@ -1,0 +1,280 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "title": "小猪佩奇 · 每日亲子内容",
+    "total_days": 3,
+    "start_date": "2026-09-21",
+    "generator": "manual",
+    "source": {
+      "episode_list": "B站12季核实表（小猪佩奇_中英对照表.md）",
+      "plot_source": "tvmaze + LLM",
+      "confidence": "high"
+    },
+    "calibration": {
+      "difficulty_curve": [
+        {"range": "day 1-90", "level": "简单"},
+        {"range": "day 91-270", "level": "中等"},
+        {"range": "day 271+", "level": "挑战"}
+      ],
+      "day_types": ["新剧日", "台词日", "单词日", "动手日", "创作日", "家庭日", "复习日"],
+      "avoid_repeat_window": 30
+    }
+  },
+  "episodes": [
+    {
+      "ep": "1-01",
+      "day": 1,
+      "date": "2026-09-21",
+      "title": {"zh": "泥坑", "en": "Muddy Puddles", "zh_alt": ["跳泥坑", "泥水坑"]},
+      "day_type": "新剧日",
+      "difficulty": "简单",
+      "airdate": "2004-05-31",
+      "tags": {"season_context": "首次观看", "life_scenario": "户外活动 / 安全规则"},
+      "content": {
+        "plot": {
+          "summary": "下雨了，佩奇不能出门玩。雨停后，佩奇和乔治在花园发现泥坑，跳得正开心，猪妈妈要求他们先穿靴子。最后猪爸爸也跳进泥坑，把猪妈妈溅了一身泥。",
+          "source": "tvmaze",
+          "source_en": "It's raining and Peppa is sad because she can't play outside. When the rain stops, Peppa and George get to play one of their favourite games - jumping in muddy puddles!",
+          "confidence": "high"
+        },
+        "core": {
+          "lesson": "按规矩来，反而能玩得更尽兴",
+          "keywords": ["规则", "安全感", "家庭"],
+          "emotion": "快乐"
+        },
+        "concepts": ["天气", "安全规则", "家庭互动"],
+        "beats": [
+          {"stage": "开场", "desc": "下雨，佩奇隔着窗户看外面，很无聊", "en": "It's raining and Peppa is sad because she can't play outside.", "graphic": "rain"},
+          {"stage": "转折", "desc": "雨停了，阳光出来，泥坑出现了", "en": "When the rain stops, Peppa and George get to play one of their favourite games!", "graphic": "sun"},
+          {"stage": "小冲突", "desc": "猪妈妈说跳泥坑必须先穿靴子", "en": "If you jump in muddy puddles, you must wear your boots.", "graphic": "boots"},
+          {"stage": "高潮", "desc": "猪爸爸第一个跳进去，溅了猪妈妈一身", "en": "When Mummy and Daddy Pig join in, things get very muddy indeed.", "graphic": "puddle"},
+          {"stage": "结尾", "desc": "全家五口一起在泥坑里跳，笑成一团", "en": "", "graphic": "puddle"}
+        ],
+        "roles": [
+          {"who": "佩奇", "emotion_path": "无聊 → 兴奋 → 不太情愿 → 开心", "learned": "接受了安全规则", "say": "But we want to jump in the puddles!"},
+          {"who": "乔治", "emotion_path": "兴奋 → 听话 → 开心", "learned": "模仿哥哥", "say": "Dine-saw! Dine-saw!"},
+          {"who": "猪妈妈", "emotion_path": "平静 → 被溅一身 → 无奈又开心", "learned": "大人也爱玩", "say": "Peppa, you must wear your boots."},
+          {"who": "猪爸爸", "emotion_path": "憋不住 → 第一个跳 → 最狼狈", "learned": "带动气氛", "say": "I'm going to jump in the muddy puddles!"}
+        ],
+        "words": [
+          {"en": "puddle", "ipa": "/ˈpʌdl/", "zh": "水坑，泥坑", "level": 1, "pos": "n", "example": "We jump in muddy puddles.", "graphic": "pond", "is_new": true},
+          {"en": "boots", "ipa": "/buːts/", "zh": "靴子（复数）", "level": 1, "pos": "n", "example": "You must wear your boots.", "graphic": "boots", "is_new": true},
+          {"en": "rain", "ipa": "/reɪn/", "zh": "下雨；雨", "level": 1, "pos": "n", "example": "It's raining today.", "graphic": "rain", "is_new": true},
+          {"en": "muddy", "ipa": "/ˈmʌdi/", "zh": "泥泞的", "level": 2, "pos": "adj", "example": "The puddles are very muddy.", "graphic": "", "is_new": true},
+          {"en": "jump", "ipa": "/dʒʌmp/", "zh": "跳", "level": 1, "pos": "v", "example": "Jump! Jump! Jump!", "graphic": "", "is_new": true}
+        ],
+        "lines": [
+          {
+            "en": "Peppa, you must wear your boots.",
+            "zh": "佩奇，你必须穿上靴子。",
+            "why": "must + 动词原形，表示「必须做某事」，亲子最该先学的句型",
+            "grammar": "must + 动词原形",
+            "repeat": true
+          },
+          {
+            "en": "Ready to jump in muddy puddles?",
+            "zh": "准备跳泥坑了吗？",
+            "why": "be ready to + 动词原形，出发前的问句",
+            "grammar": "be ready to + 动词原形",
+            "repeat": false
+          }
+        ],
+        "ask": [
+          {"type": "回忆", "q": "跳泥坑之前，猪妈妈要求他们先做什么？", "expect": "穿靴子", "zh": true},
+          {"type": "回忆", "q": "这一集里谁最后也跳进了泥坑？", "expect": "猪爸爸（和猪妈妈）", "zh": true},
+          {"type": "联系生活", "q": "下过雨的地上的水坑，你踩过吗？穿什么鞋才不会弄湿脚？", "expect": "雨靴或运动鞋", "zh": true},
+          {"type": "想象", "q": "如果你家门口有一个超级大的泥坑，你想和谁一起跳？", "expect": "自由回答", "zh": true}
+        ],
+        "play": {
+          "activity": "穿雨靴去踩一次真的水洼；没有水洼就把旧报纸揉成泥坑，全家手拉手跳进去，一起喊 Jump! Jump! Jump in the muddy puddles!",
+          "duration_min": 10,
+          "materials": ["雨靴或旧鞋", "旧报纸", "毛巾"],
+          "indoor": false,
+          "lang_en": "Jump! Jump! Jump in the muddy puddles!"
+        },
+        "tips": [
+          {"kind": "发音", "text": "puddle 的 /ˈpʌdl/ 里 dl 是连读，孩子常读成「普豆」，可以慢速击掌两下分开读"},
+          {"kind": "文化", "text": "「跳泥坑」是佩奇最有名的标志动作，英国孩子几乎人人会唱那句 Jump, jump, jump in the muddy puddles"},
+          {"kind": "育儿", "text": "本集最好的示范是：规则没变，但执行规则的人一起下水了。以后孩子闹脾气时，试试「爸爸陪你一起做」"}
+        ],
+        "quiz": [
+          {"q": "muddy 是什么意思？", "options": ["泥泞的", "干净的", "香甜的"], "answer": 0, "kind": "词汇"},
+          {"q": "妈妈让佩奇跳泥坑前必须先做什么？", "options": ["穿上靴子", "先吃饭", "先洗手"], "answer": 0, "kind": "剧情"},
+          {"q": "这一集里天气是怎么变化的？", "options": ["先下雨后放晴", "一直下雨", "一直出太阳"], "answer": 0, "kind": "剧情"}
+        ],
+        "review": {
+          "review_days": [1, 3, 7, 21],
+          "recall_prompt": "还记不记得跳泥坑前妈妈说了什么？用英语说出来。",
+          "links_to": []
+        }
+      },
+      "quality": {
+        "word_count_ok": true,
+        "line_from_episode": true,
+        "no_repeat_30d": true,
+        "difficulty_match": true,
+        "issues": []
+      }
+    },
+
+    {
+      "ep": "1-02",
+      "day": 2,
+      "date": "2026-09-22",
+      "title": {"zh": "恐龙先生弄丢了", "en": "Mr. Dinosaur is Lost", "zh_alt": ["恐龙不见了"]},
+      "day_type": "台词日",
+      "difficulty": "简单",
+      "airdate": "2004-06-01",
+      "tags": {"season_context": "安抚玩具", "life_scenario": "东西丢失 / 情绪安抚"},
+      "content": {
+        "plot": {
+          "summary": "乔治最心爱的恐龙玩具不见了，他大哭。猪爸爸提议姐弟俩当小侦探一起找，最后在猪爸爸身后找到了恐龙先生——原来爸爸早捡到了，只是没说。",
+          "source": "tvmaze",
+          "source_en": "Mr Dinosaur is George's favourite toy. When Mr Dinosaur goes missing, George is distraught.",
+          "confidence": "high"
+        },
+        "core": {
+          "lesson": "着急时别放弃，按步骤一步步找",
+          "keywords": ["坚持", "共情", "帮助"],
+          "emotion": "难过"
+        },
+        "concepts": ["解决问题", "情绪安抚", "家庭互助"],
+        "beats": [
+          {"stage": "开场", "desc": "乔治发现恐龙不见了，哇哇大哭", "en": "Mr Dinosaur is George's favourite toy.", "graphic": "dino"},
+          {"stage": "转折", "desc": "猪爸爸提议：来当小侦探吧", "en": "Daddy Pig helps Peppa to become a detective.", "graphic": "box"},
+          {"stage": "高潮", "desc": "姐弟俩一边找一边推理，恐龙就在爸爸身后", "en": "We found Mr Dinosaur!", "graphic": "treasure"},
+          {"stage": "结尾", "desc": "乔治抱住恐龙，破涕为笑", "en": "George is a very happy little piggy again.", "graphic": "star"}
+        ],
+        "roles": [
+          {"who": "乔治", "emotion_path": "哭 → 委屈 → 兴奋 → 满足", "learned": "说出「最喜欢的东西」", "say": "Mr Dinosaur! Mr Dinosaur!"},
+          {"who": "佩奇", "emotion_path": "担心 → 认真投入 → 得意", "learned": "学会帮忙解决问题", "say": "Let's be detectives!"},
+          {"who": "猪爸爸", "emotion_path": "沉稳 → 暗中观察 → 微笑", "learned": "成人式的幽默", "say": "Have you looked behind you?"}
+        ],
+        "words": [
+          {"en": "dinosaur", "ipa": "/ˈdaɪnəsɔː/", "zh": "恐龙", "level": 1, "pos": "n", "example": "Mr Dinosaur is lost!", "graphic": "dino", "is_new": false},
+          {"en": "lost", "ipa": "/lɒst/", "zh": "丢失的；找不到的", "level": 2, "pos": "adj", "example": "My toy is lost.", "graphic": "", "is_new": true},
+          {"en": "find", "ipa": "/faɪnd/", "zh": "找到", "level": 1, "pos": "v", "example": "We found Mr Dinosaur!", "graphic": "treasure", "is_new": true},
+          {"en": "detective", "ipa": "/dɪˈtɛktɪv/", "zh": "侦探", "level": 3, "pos": "n", "example": "Let's be detectives!", "graphic": "", "is_new": true}
+        ],
+        "lines": [
+          {"en": "Mr Dinosaur is lost!", "zh": "恐龙先生不见了！", "why": "is lost 是系表结构描述状态，形容词 past participle", "grammar": "be + 过去分词", "repeat": true},
+          {"en": "We found Mr Dinosaur!", "zh": "我们找到恐龙先生啦！", "why": "found 是 find 的过去式，小学必学不规则动词", "grammar": "不规则过去式", "repeat": true}
+        ],
+        "ask": [
+          {"type": "回忆", "q": "恐龙先生最后是在哪里找到的？", "expect": "在猪爸爸身后", "zh": true},
+          {"type": "情绪", "q": "乔治找不到恐龙的时候哭了吗？你哭的时候希望别人怎么对你？", "expect": "共情回应", "zh": true},
+          {"type": "联系生活", "q": "你有没有弄丢过心爱的玩具？后来是怎么找到的？", "expect": "自由回答", "zh": true},
+          {"type": "想象", "q": "如果家里有一样东西不见了，你要按什么步骤去找？先找哪里？", "expect": "先固定位置→再问人", "zh": true}
+        ],
+        "play": {
+          "activity": "在家玩小侦探寻宝：藏起一件玩具，准备 3 条口头线索（比如「在比沙发高的地方」「摸起来毛毛的」「爸爸昨天抱过它」），让孩子一步步找，找到就喊 We found it!",
+          "duration_min": 8,
+          "materials": ["任一小玩具", "一条丝巾"],
+          "indoor": true,
+          "lang_en": "We found it!"
+        },
+        "tips": [
+          {"kind": "发音", "text": "dinosaur 重音在前 /ˈdaɪ-/，读成「代-诺」，很多孩子会读成「代诺儿」，把 -sior 轻读带过就好"},
+          {"kind": "文化", "text": "Mr Dinosaur 是乔治的安抚玩偶，孩子难过时抱着它，是佩奇剧里少见的「情绪疗愈」线索"},
+          {"kind": "育儿", "text": "孩子哭闹要东西时，先共情「你很难过」，再一起想办法。本集佩奇没有立刻把恐龙给乔治，而是带他一起找——先处理情绪，再处理事情"}
+        ],
+        "quiz": [
+          {"q": "George 的恐龙先生最后在哪里找到的？", "options": ["在猪爸爸身后", "在花园里", "在床上"], "answer": 0, "kind": "剧情"},
+          {"q": "found 是哪个动词的过去式？", "options": ["find", "look", "see"], "answer": 0, "kind": "词汇"}
+        ],
+        "review": {
+          "review_days": [1, 3, 7, 21],
+          "recall_prompt": "恐龙先生是在哪里找到的？用英语说。",
+          "links_to": []
+        }
+      },
+      "quality": {
+        "word_count_ok": true,
+        "line_from_episode": true,
+        "no_repeat_30d": true,
+        "difficulty_match": true,
+        "issues": []
+      }
+    },
+
+    {
+      "ep": "1-03",
+      "day": 3,
+      "date": "2026-09-23",
+      "title": {"zh": "最好的朋友", "en": "Best Friend", "zh_alt": ["好朋友"]},
+      "day_type": "单词日",
+      "difficulty": "简单",
+      "airdate": "2004-06-02",
+      "tags": {"season_context": "交友", "life_scenario": "弟弟加入 / 接纳与共享"},
+      "content": {
+        "plot": {
+          "summary": "苏西来家里玩，乔治也想加入但佩奇不肯带他。两个女孩玩医生病人的游戏时发现缺一个病人，于是邀请乔治当病人，三个孩子一起玩得很开心。",
+          "source": "tvmaze",
+          "source_en": "Peppa's best friend, Suzy Sheep, comes to play. George wants to play too, but Peppa won't let him join in their games.",
+          "confidence": "high"
+        },
+        "core": {
+          "lesson": "让别人加入，游戏会更好玩",
+          "keywords": ["分享", "接纳", "轮流"],
+          "emotion": "快乐"
+        },
+        "concepts": ["友谊", "接纳共享", "角色扮演"],
+        "beats": [
+          {"stage": "开场", "desc": "苏西来做客，佩奇和苏西玩得开心", "en": "Peppa's best friend, Suzy Sheep, comes to play.", "graphic": "sheep"},
+          {"stage": "小冲突", "desc": "乔治也想玩，佩奇不肯让他加入", "en": "George wants to play too, but Peppa won't let him join in their games.", "graphic": "pig"},
+          {"stage": "转折", "desc": "玩医生病人的游戏，发现正好缺一个病人", "en": "They discover they need a patient.", "graphic": "house"},
+          {"stage": "解决", "desc": "乔治被邀请当病人", "en": "George is allowed to join them.", "graphic": "star"},
+          {"stage": "结尾", "desc": "三个孩子一起玩，乔治当病人当得很开心", "en": "George is happy to play the patient.", "graphic": "ball"}
+        ],
+        "roles": [
+          {"who": "佩奇", "emotion_path": "开心 → 不耐烦 → 有点愧疚 → 开心", "learned": "学会接纳弟弟", "say": "George, you can be the patient."},
+          {"who": "乔治", "emotion_path": "期待 → 失落 → 开心", "learned": "主动争取加入", "say": "Can I play too?"},
+          {"who": "苏西", "emotion_path": "开心", "learned": "被动促成了和解", "say": "We need a patient!"}
+        ],
+        "words": [
+          {"en": "friend", "ipa": "/frend/", "zh": "朋友", "level": 1, "pos": "n", "example": "Suzy is Peppa's best friend.", "graphic": "sheep", "is_new": false},
+          {"en": "doctor", "ipa": "/ˈdɒktə/", "zh": "医生", "level": 1, "pos": "n", "example": "Let's play doctors.", "graphic": "", "is_new": true},
+          {"en": "join", "ipa": "/dʒɔɪn/", "zh": "加入；一起玩", "level": 2, "pos": "v", "example": "Can I join you?", "graphic": "", "is_new": true},
+          {"en": "patient", "ipa": "/ˈpeɪʃnt/", "zh": "病人", "level": 3, "pos": "n", "example": "George can be the patient.", "graphic": "", "is_new": true}
+        ],
+        "lines": [
+          {"en": "Can I join in?", "zh": "我能一起玩吗？", "why": "非常实用的社交句：Can I + 动词原形，问能否加入", "grammar": "Can I + 动词原形", "repeat": true},
+          {"en": "George, you can be the patient.", "zh": "乔治，你可以当病人。", "why": "can be + 角色，表示可以被安排成什么", "grammar": "can be + 名词", "repeat": false}
+        ],
+        "ask": [
+          {"type": "回忆", "q": "一开始佩奇为什么不带乔治一起玩？后来为什么又带了？", "expect": "因为需要病人", "zh": true},
+          {"type": "联系生活", "q": "如果有小朋友想来和你们一起玩，你会怎么回答？", "expect": "自由回答", "zh": true},
+          {"type": "想象", "q": "玩过家家时如果少一个角色，家里还有什么人或玩偶能顶上来？", "expect": "自由回答", "zh": true}
+        ],
+        "play": {
+          "activity": "玩「医生和病人」角色扮演：用卷纸筒当听诊器，家长当医生，孩子当病人，再请一个玩偶当护士，全程用简单英文：Where does it hurt? / Open your mouth. / Say Ahh!",
+          "duration_min": 10,
+          "materials": ["卷纸筒", "小毯子", "1-2 个玩偶"],
+          "indoor": true,
+          "lang_en": "Where does it hurt?"
+        },
+        "tips": [
+          {"kind": "发音", "text": "patient 重音在前 /ˈpeɪ-/，和 patience（耐心）拼写接近但意思完全不同，注意区分"},
+          {"kind": "文化", "text": "英式幼儿园 playgroup 是从 3 岁左右开始的混龄班，佩奇、苏西、乔治年龄差只有一岁，正是学「一起玩」的阶段"},
+          {"kind": "育儿", "text": "两个孩子抢玩具时，最有效的不是批评小的那个，而是先照顾情绪再给方案。本集佩奇后来自己解决了问题，可以借机问「你觉得乔治当时是什么心情呀？」"}
+        ],
+        "quiz": [
+          {"q": "玩医生病人的游戏时，谁发现了缺一个病人？", "options": ["佩奇和苏西", "乔治", "猪妈妈"], "answer": 0, "kind": "剧情"},
+          {"q": "Can I join in? 是什么意思？", "options": ["我能一起玩吗？", "我要回家了", "我饿了"], "answer": 0, "kind": "词汇"}
+        ],
+        "review": {
+          "review_days": [1, 3, 7, 21],
+          "recall_prompt": "Can I ____ in? 补全句子。",
+          "links_to": []
+        }
+      },
+      "quality": {
+        "word_count_ok": true,
+        "line_from_episode": true,
+        "no_repeat_30d": true,
+        "difficulty_match": true,
+        "issues": []
+      }
+    }
+  ]
+}
